@@ -1,0 +1,22 @@
+
+
+:root{
+  --NEGRO:#1c1c1c;
+  --AMARIO:#ffd33c;
+  --AZULITO:rgb(94, 176, 215);
+}
+p,input,button,a,li,ul,span{
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  color:var(--text-color);
+
+}
+h1,h2,h3,h4,h5 {
+  font-family: "Roboto Slab", serif;
+}
+html,body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  overflow:hidden;
+}

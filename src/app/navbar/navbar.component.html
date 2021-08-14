@@ -1,0 +1,40 @@
+<div class="navbar-container">
+  <div class="logo" routerLink="">
+    <img src="/assets/logo-white.png"  style="width: 72%">
+  </div>
+  <div class="navigation">
+    <div id="inter" routerLink="/interconexion">
+      <p >Interconexión CFE</p>
+    </div>
+    <div (click)="showToggleMenu = !this.showToggleMenu" id="toggler">
+      <p >Soluciones de ahorro
+        <svg *ngIf="!showToggleMenu" style="width:24px;height:24px;vertical-align:middle" viewBox="0 0 24 24">
+          <path fill="currentColor" d="M7,10L12,15L17,10H7Z" />
+        </svg>
+        <svg *ngIf="showToggleMenu" style="width:24px;height:24px;vertical-align:middle" viewBox="0 0 24 24">
+          <path fill="currentColor" d="M7,15L12,10L17,15H7Z" />
+        </svg>
+      </p>
+
+
+      <div *ngIf="showToggleMenu" class="toggle-menu" id="toggle-menu">
+        <div >
+          <p  href="/resources/html/soluciones/led/led.html">Iluminación LED</p>
+        </div>
+        <div >
+          <p  href="/resources/html/soluciones/torre/torre.html">Torre de iluminación Solar</p>
+        </div>
+        <div>
+          <p  href="/resources/html/soluciones/bombeo/bombeo.html">Bombeo solar</p>
+        </div>
+      </div>
+    </div>
+
+    <div routerLink="nosotros"><p >Nosotros</p></div>
+    <div><p >Blog</p></div>
+    <div><p >Shop</p></div>
+  </div>
+  <div style="display: grid;align-items: center;justify-items: center;">
+    <button class="contact-desktop">Contáctanos</button>
+  </div>
+</div>
